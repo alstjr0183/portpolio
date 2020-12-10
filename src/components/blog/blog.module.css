@@ -1,0 +1,29 @@
+@value mediaQuery from '../../common/size.css';
+@value theme1 ,theme4 from '../../common/colors.css';
+
+.div {
+    position: relative;
+    height: 100vh;
+}
+
+.youtubeicon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 5rem;
+    margin-right: 0.6rem;
+    color: theme1;
+}
+
+.youtubeicon i:hover {
+    color: red;
+}
+
+.youtubebox {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*width: 50%;*/
+    /*background-color: pink;*/
+}

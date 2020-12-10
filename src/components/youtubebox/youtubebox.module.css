@@ -1,0 +1,109 @@
+@value mediaQuery from '../../common/size.css';
+@value theme1 ,theme4 from '../../common/colors.css';
+
+
+
+.youtubeicon i{
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0.1em;
+    color: theme1;
+}
+
+.youtubeicon i:hover {
+    color: red;
+}
+
+.section {
+    transition: 1s all;
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: theme1
+}
+
+.searchbox {
+    width: 100%;
+
+    display: flex;
+}
+
+.inputbox {
+    width: 90%;
+    display: flex;
+
+}
+
+.inputbox input{
+    width: 80%;
+    padding: 0;
+    font-size: 2em;
+    margin-left: 2rem;
+    background-color:theme4;
+    border: none;
+    margin-right: 0.1em;
+    outline: none;
+}
+
+.inputbox button {
+    background-color:theme4;
+    width: 2em;
+    padding: 0;
+    font-size: 2em;
+    border: none;
+    outline: none;
+}
+
+.inputbox button i {
+    color: theme1;
+}
+
+.closebox {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    font-size: 3em;
+    color: theme4;
+}
+
+.closebox i:hover {
+    color: red;
+}
+
+.listbox {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    margin: 2rem;
+}
+
+.listbox iframe{
+    display: none;
+}
+
+
+.listbox::-webkit-scrollbar {
+    width: 10px;
+}
+.listbox::-webkit-scrollbar-thumb {
+    background-color: lightpink;
+    border-radius: 10px;
+}
+.listbox::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px white;
+}
+
+@media screen and (max-width: mediaQuery) {
+    .youtubeicon {
+        display: none;
+    }
+}
+

@@ -1,0 +1,52 @@
+@value mediaQuery from '../../common/size.css';
+@value theme1 ,theme4 from '../../common/colors.css';
+
+.div {
+    display: flex;
+}
+
+.section {
+    width: 30%;
+    background: theme1;
+    overflow: hidden;
+    transition: 1s all;
+}
+
+.section ul {
+    padding: 0;
+    text-align: center;
+    font-size: 3rem;
+}
+.section li {
+    margin-bottom: 3rem;
+}
+
+.section a {
+    text-decoration: none;
+    color: theme4;
+    border-bottom: 3px solid theme4;
+}
+
+.section a:hover {
+    animation-name: menuani;
+    animation-duration: 2s;
+}
+
+.main {
+    width: 100%;
+}
+
+@keyframes menuani {
+    from{
+        color: red;
+        opacity: 0;
+    }to {
+    opacity: 1;
+         }
+}
+
+@media screen and (max-width: mediaQuery) {
+    .section {
+        display: none;
+    }
+}

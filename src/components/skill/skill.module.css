@@ -1,0 +1,61 @@
+@value mediaQuery from '../../common/size.css';
+@value theme1 , theme4 from '../../common/colors.css';
+
+.div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.frontSection,
+.backSection,
+.etcSection
+{
+    margin-top: 2rem;
+    color: theme1;
+    width: 70%;
+    height: 20rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.skilltitle {
+    color: theme1;
+    border-bottom: 3px solid theme1;
+}
+
+.sectionicon {
+    color: theme4;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionicon i {
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+}
+
+.backSection {
+    height: 12rem;
+}
+
+.etcSection {
+
+}
+
+@media screen and (max-width: mediaQuery) {
+    .div {
+        width: 100%;
+    }
+
+    .frontSection,
+    .backSection,
+    .etcSection {
+        width: 90%;
+    }
+}
